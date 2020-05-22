@@ -1,26 +1,28 @@
-<HTML>
- <HEAD>
-  <TITLE>Welcome to Kickopedia</TITLE>
- 
-<style type="text/css">
-#iframe {
-    zoom: 0.15;
-    -moz-transform:scale(0.75);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.75);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.75);
-    -webkit-transform-origin: 0 0;
+<style>
+#wrapper { width: 710px; height: 1420px; padding: 0; overflow: hidden; }
+
+#scaled-frame { width: 1000px; height: 2000px; border: 0px; }
+
+#scaled-frame {
+
+zoom: 0.71;
+-moz-transform: scale(0.71);
+-moz-transform-origin: 0 0;
+-o-transform: scale(0.71);
+-o-transform-origin: 0 0;
+-webkit-transform: scale(0.71);
+-webkit-transform-origin: 0 0;
+
 }
+
+ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#scaled-frame  { zoom: 1;  }
+}
+
 </style>
- </HEAD>
 
- <BODY>
-<iframe frameborder=0 width="1600px" height="100%" src="https://analytics.zoho.com/open-view/2187264000000016406"></iframe>
+ 
 
-
-  </BODY>
-
-</HTML>
-
-
+<div id="wrapper"><iframe frameborder=0 width="1600px" height="100%" src="https://analytics.zoho.com/open-view/2187264000000016406"></iframe></div>
