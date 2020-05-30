@@ -4,6 +4,8 @@
     <title>KickAnalytics &mdash; We help you grow your business</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Hotjar Tracking Code for www.kickopedia.com -->
   <script>
     (function(h,o,t,j,a,r){
@@ -54,42 +56,108 @@
   <div class="site-wrap"  id="home-section">
 
    
-    <header class="site-navbar py-4  site-navbar-target" role="banner">
-
-      <div class="container">
-        <div class="row align-items-center">
-          
-          <div class="col-6 col-md-3 col-xl-4  d-block">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">Kickopedia<span class="text-primary">.</span> </a></h1>
-          </div>
-
-          <div class="col-12 col-md-9 col-xl-8 main-menu">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ml-0 pl-0">
-                <li><a href="/index.html" class="nav-link">Home</a></li>
-                 <li>
-                  <a href="/index.html" class="nav-link">Features</a>
-                </li>
-                <li>
-                  <a href="/about-us.html" class="nav-link">About Us</a>
-                </li>
-                <li>
-                  <a href="/kickanalytics.html" class="nav-link">KickAnalytics</a>
-                </li>
-                <li><a href="mailto:kickopedia@outlook.com" class="nav-link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-
-
-
-        </div>
-      </div>
-      
-
-
-    </header>
+   <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+         <div id="dektop-container" class="container">
+            <div class="row align-items-center">
+               <div class=" col-6 col-md-3 col-xl-4  d-block">
+                  <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">Kickopedia<span class="text-primary">.</span> </a></h1>
+               </div>
+               <div class="col-12 col-md-9 col-xl-8 main-menu">
+                  <nav class="desktop site-navigation position-relative text-right" role="navigation">
+                     <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ml-0 pl-0">
+                        <li><a href="/index.html" class="nav-link">Home</a></li>
+                        <li><a href="#features-section" class="nav-link">Features</a></li>
+                        <li >
+                           <a href="/about-us.html" class="nav-link">About Us</a>
+                        <li><a href="/kickanalytics.html" class="nav-link">KickAnalytics</a></li>
+                        <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+         <!-- Top Navigation Menu -->
+         <div class="topnav">
+            <div class="col-6 col-md-3 col-xl-4  d-block">
+               <h1 class="mb-0 site-logo"><a href="/index.html" class="text-black h2 mb-0" style="font-size:35px;">Kickopedia<span class="text-primary">.</span> </a></h1>
+            </div>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+               <a href="/index.html">Home</a>
+               <a href="/about-us.html">About Us</a>
+               <a href="/kickanalytics.html">KickAnalytics</a>
+               <a href="mailto:kickopedia@outlook.com">Contact Us</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+         </div>
+         <style type="text/css">
+            @media screen and (min-width: 600px) {
+            .topnav {
+            visibility: hidden;
+            clear: both;
+            float: left;
+            margin: 10px auto 5px 20px;
+            width: 28%;
+            display: none;
+            }
+            }
+            @media screen and (max-width: 600px) {
+            #dektop-container {
+            display: none;
+            }
+            }
+            /* Style the navigation menu */
+            .topnav {
+            overflow: hidden;
+            background-color: white;
+            position: relative;
+            }
+            /* Hide the links inside the navigation menu (except for logo/home) */
+            .topnav #myLinks {
+            display: none;
+            }
+            /* Style navigation menu links */
+            .topnav a {
+            color: black;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            display: block;
+            }
+            /* Style the hamburger menu */
+            .topnav a.icon {
+            background: transparent;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            }
+            /* Add a grey background color on mouse-over */
+            .topnav a:hover {
+            background-color: transparent;
+            color: black;
+            }
+            /* Style the active link (or home/logo) */
+            .active {
+            background-color: #4CAF50;
+            color: white;
+            }
+         </style>
+         <script>
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+            }
+         </script>
+      </header>
     
 <div></div>
 <div style="position:relative; top:100px; overflow:hidden;">
