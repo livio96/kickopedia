@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KickAnalytics? &mdash; How it works</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Hotjar Tracking Code for www.kickopedia.com -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1815099,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    <link rel="icon" 
+      type="image/png" 
+      href="https://raw.githubusercontent.com/livio96/livio96.github.io/master/images/kickopedia-favicon-1.png">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/png" href="/kickopedia-favicon-1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <div class="site-wrap"  id="home-section">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+   <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+         <div id="dektop-container" class="container">
+            <div class="row align-items-center">
+               <div class=" col-6 col-md-3 col-xl-4  d-block">
+                  <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">Kickopedia<span class="text-primary">.</span> </a></h1>
+               </div>
+               <div class="col-12 col-md-9 col-xl-8 main-menu">
+                  <nav class="desktop site-navigation position-relative text-right" role="navigation">
+                     <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ml-0 pl-0">
+                        <li><a href="/index.html" class="nav-link">Home</a></li>
+                        <li><a href="#features-section" class="nav-link">Features</a></li>
+                        <li><a href="/howitworks.html" class="nav-link">How It Works</a></li>
+
+                        <li >
+                           <a href="/about-us.html" class="nav-link">About Us</a>
+                        <li><a href="/kickanalytics.html" class="nav-link">KickAnalytics</a></li>
+                        <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+         <!-- Top Navigation Menu -->
+         <div class="topnav">
+            <div class="col-6 col-md-3 col-xl-4  d-block">
+               <h1 class="mb-0 site-logo"><a href="/index.html" class="text-black h2 mb-0" style="font-size:35px;">Kickopedia<span class="text-primary">.</span> </a></h1>
+            </div>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+               <a href="/index.html">Home</a>
+               <a href="/about-us.html">About Us</a>
+               <a href="/kickanalytics.html">KickAnalytics</a>
+              <li><a href="/howitworks.html" class="nav-link">How It Works</a></li>
+               <a href="mailto:kickopedia@outlook.com">Contact Us</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+         </div>
+         <style type="text/css">
+            @media screen and (min-width: 600px) {
+            .topnav {
+            visibility: hidden;
+            clear: both;
+            float: left;
+            margin: 10px auto 5px 20px;
+            width: 28%;
+            display: none;
+            }
+            }
+            @media screen and (max-width: 600px) {
+            #dektop-container {
+            display: none;
+            }
+            }
+            /* Style the navigation menu */
+            .topnav {
+            overflow: hidden;
+            background-color: white;
+            position: relative;
+            }
+            /* Hide the links inside the navigation menu (except for logo/home) */
+            .topnav #myLinks {
+            display: none;
+            }
+            /* Style navigation menu links */
+            .topnav a {
+            color: black;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            display: block;
+            }
+            /* Style the hamburger menu */
+            .topnav a.icon {
+            background: transparent;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            }
+            /* Add a grey background color on mouse-over */
+            .topnav a:hover {
+            background-color: transparent;
+            color: black;
+            }
+            /* Style the active link (or home/logo) */
+            .active {
+            background-color: #4CAF50;
+            color: white;
+            }
+         </style>
+         <script>
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+            }
+         </script>
+      </header>
+
+
+
+    <div class="footer py-5 text-center">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .site-wrap -->
+   <br>
+   <div style="margin-left:20px;">
+     <h4>Filtering & Analysing The Dashboard Data</h4>
+     <ul>
+      <li>Each Dashboard has its own set of data, the ‘Data Page’. Before making use of the Dataset, you will be prompted to configure the ‘Search Form’ on top of the page.</li>
+      <li>The ‘Search’ button will only apply once all, if any, the required fields on the search form are populated. Here is a snapshot of a proper ‘Amazon Analytics’ search form</li>
+      <li>Each filtering category has its own requirements and criteria</li>
+     </ul>
+
+    </div><br>
+
+     <img style=" margin-left:30px; width:80%;" src="images/howto02.png"><br>
+     <hr>
+     <br><br>
+   
+    <br>
+
+   <div style="margin-left:15px;">
+     <h4>Using and Downloading the ‘Data Page’ </h4>
+     <ul>
+      <li>A ‘Data Page’ is a Set of results emerged after you have applied the filters properly and hit the ‘Search’ button. Data Pages will appear below the search form.</li>
+      <li>If you choose to see a different result page, you can simply scroll up to the search form and apply the filtering criteria again, and the press ‘Search’.</li>
+      <li>The ‘Data Page’ fields (columns) can be sorted on a ‘ascending’ or ‘descending’ order by clicking on the column name. You can only sort one column at a time. Once you click on the Column Name, a little arrow will appear on the right side of the Column Name, pointing ‘up’ or ‘down’, you can change the direction of the sorting by clicking on the Column Name again. </li>
+       <li>To download the Data Page, simply click on the ‘Download Data’ image on the Top Left corner of the ‘Data Page’. The file will be on a CSV format and downloaded as a Zip file</li>
+     </ul>
+
+    </div><br>
+     <img style=" margin-left:30px; width:90%;" src="images/howto03.png"><br>
+     
+     <hr>
+     <br><br>
+   
+    <br>
+
+   <div style="margin-left:15px;">
+     <h4>Explore Price History</h4>
+     <ul>
+      <li>Sometimes the price history of a product viewed on different retailers can be a meaningful stat. You can notice price jumps or tanks that may affect your decision to purchase the product and resell it on the Marketplace. To see the Price History, click on “See Price History” link on the right most column of the Data Page</li>
+     </ul>
+
+    </div><br>
+     <img style=" margin-left:30px; width:90%;" src="images/howto04.png"><br>
+     
+   <hr>
+     <br><br>
+   
+    <br>
+
+   <div style="margin-left:15px;">
+     <h4>Explore the Deals and Marketplace Listings</h4>
+     <ul>
+      <li>The ‘Data Page’ will display all the Listings/Offers available to Kickopedia that fit your search criteria. Each row of data represents a Product Variation. To see the referred Marketplace listing simply click the ‘See Listing’ Link underlined in ‘red’ on the sample image below. To see the deal offered at the retailer website click the ‘Price Display’ on the ‘Retailer’ Column, underlined in ‘green’ on the sample image below. Please note that sometimes the Retailers or the Marketplaces provide the same URL for different product variations, so you will need to find the same product variation on the Retailer/Marketplace site as the one indicated on the Kickanalytics’ ‘Data Page’</li>
+     </ul>
+
+    </div><br>
+     <img style=" margin-left:30px; width:90%;" src="images/howto05.png"><br>
+
+        </div>
+      </div>
+    </div> 
+
+    <div class="footer py-5 text-center">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12">
+            <p class="mb-0">
+              <a href="https://www.facebook.com/Kickopedia/" class="p-3"><span class="icon-facebook"></span></a>
+              <a href="https://www.instagram.com/kick0pedia" class="p-3"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="mb-0">
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://www.linkedin.com/in/livio-beqiri-a53915139/" target="_blank" >Livio Beqiri</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .site-wrap -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+
+  
+  <script src="js/main.js"></script>
+  
+  </body>
+</html>
