@@ -135,6 +135,31 @@
                background-color: transparent;
                color: black;
                }
+               
+               
+               .navigation-bar {
+                 overflow: hidden;
+                 background-color: #333;
+               }
+
+               .navigation-bar a {
+                 float: left;
+                 color: #f2f2f2;
+                 text-align: center;
+                 padding: 14px 16px;
+                 text-decoration: none;
+                 font-size: 17px;
+               }
+
+               .navigation-bar a:hover {
+                 background-color: #ddd;
+                 color: black;
+               }
+
+               .navigation-bar a.active {
+                 background-color: #4CAF50;
+                 color: white;
+               }
             </style>
             <script>
                /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
@@ -148,7 +173,14 @@
                }
             </script>
          </header>
-         <div style="position: relative; top:400px">
+         
+            <div class="navigation-bar">
+              <a class="active" href="/amazon-analytics.html">Amazon DealFinder</a>
+              <a href="/stockx-analytics.html">StockX DealFinder</a>
+            </div>
+
+        
+         <div style="position: relative; top:100px">
         <!-- <div style="position:relative; top:100px; overflow:hidden;">
             <iframe height="1500px;" width="100%;" name="Sheet1 Search and Report" title="Sheet1 Search and Report" src="https://c0dcq817.caspio.com/dp/b6e98000f734aa88bfaf43e9b708">Sorry, but your browser does not support frames.</iframe>
          </div>
