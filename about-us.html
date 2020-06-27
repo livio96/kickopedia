@@ -40,7 +40,7 @@
             <span class="sr-only">Loading...</span>
          </div>
       </div>
-      <div class="site-wrap"  id="home-section">
+      <div  class="site-wrap small-header"  id="home-section">
          <div class="site-mobile-menu site-navbar-target">
             <div class="site-mobile-menu-header">
                <div class="site-mobile-menu-close mt-3">
@@ -104,11 +104,23 @@
                width: 28%;
                display: none;
                }
+                  .small-header{
+                     height: 100px;
+                  }
                }
                @media screen and (max-width: 600px) {
                #dektop-container {
                display: none;
                }
+
+                  .py-4, .js-sticky-head, .site-navbar-target {
+                     height:10px !important;
+                     margin-top:-20px;
+                     margin-bottom:-30px;
+                  }
+                  .about-body{
+                     margin-top:-50px !important;
+                  }
                }
                /* Style the navigation menu */
                .topnav {
@@ -168,7 +180,7 @@
          </div>
       </div>
       <!-- .site-wrap -->
-      <div style="margin-left:20px;">
+      <div class="about-body" style="margin-left:20px;">
          <h4>About us</h4>
          <p>When the Kickopedia founders were not more than a few guys in the beginning of a side hustle everything felt like climbing a mountain. 
             Questions like <strong>“What sells on Amazon? Is Ebay enough for me? How can I find a good and profitable product to flip? Will I lose money?”</strong> were raining in.  
