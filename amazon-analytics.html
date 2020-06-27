@@ -98,7 +98,7 @@
                width: 28%;
                display: none;
                }
-                  
+
                    .warning {
                   display:none;
                }
@@ -112,7 +112,15 @@
                #dektop-container {
                display: none;
                }
-              
+                  .dashboard-nav{
+                     top:80px !important;
+                  }
+
+                  .py-4, .js-sticky-head, .site-navbar-target {
+                     height:10px !important;
+                     margin-top:-20px;
+                     margin-bottom:-30px;
+                  }
               .warning {
                border: 1px solid #ddd;
                margin-top: -1px; /* Prevent double borders */
@@ -203,7 +211,7 @@
                }
             </script>
          </header>
-         <div style="position: relative; top:100px">
+         <div class="dashboard-nav" style="position: relative; top:100px">
             <div class="navigation-bar">
                <a class="active" href="/amazon-analytics.html">Amazon DealFinder</a>
                <a href="/stockx-analytics.html">StockX DealFinder</a>
